@@ -1,4 +1,6 @@
 import CreditCardDetector from './utils/creditCardDetector';
+import Cards from 'react-credit-cards';
+import 'react-credit-cards/es/styles-compiled.css';
 import { useState } from 'react';
 
 function App() {
@@ -31,14 +33,17 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <input placeholder="Enter your credit card number"
           name='credit'
           value={state}
           onChange={onCreditCardChange} />
         <button onClick={handleClear}>clear</button>
       </div>
-      <h1>ini kartu {value === 'unknown' ? 'Tidak tedefinisi' : value}</h1>
+      <h1 style={{ textAlign: 'center' }}>ini kartu {value === 'unknown' ? 'Tidak tedefinisi' : value}</h1>
+      <Cards
+        number={state}
+      />
     </>
   );
 }
