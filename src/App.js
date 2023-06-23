@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <input placeholder="Enter your credit card number"
+        <input max={16} placeholder="Enter your credit card number"
           name='credit'
           value={state}
           onChange={onCreditCardChange} />
