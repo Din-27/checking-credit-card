@@ -62,8 +62,8 @@ function App() {
                 <tr>
                     <td>{data.bank_name}</td>
                     <td>{data.country}</td>
-                    <td><a href={data.url} target='_blank'>Link</a></td>
-                    <td>{data.type}</td>
+                    <td><a href={`https://${data.url}`} target='_blank'>Link</a></td>
+                    <td>{data.type === 'Debit' ? `${data.type}` : `${data.type}/Kredit`}</td>
                     <td>{data.scheme}</td>
                     <td>{data.bin}</td>
                 </tr >
