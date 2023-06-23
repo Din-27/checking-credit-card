@@ -31,9 +31,9 @@ function App() {
 
     useEffect(() => {
         console.log(localStorage.data);
-        if (data.length === 0) {
-            setData(JSON.parse(localStorage.data))
-        }
+        // if (data.length === 0) {
+        //     setData(JSON.parse(localStorage.data))
+        // }
     }, [])
 
     return (
