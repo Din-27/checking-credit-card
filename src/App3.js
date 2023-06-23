@@ -40,7 +40,7 @@ function App3() {
           onChange={onCreditCardChange} />
         <button onClick={handleClear}>clear</button>
       </div>
-      <h1 style={{ textAlign: 'center' }}>ini kartu <span style={{ textTransform: 'uppercase' }}>{value === 'unknown' ? 'Tidak tedefinisi' : value}</span></h1>
+      <h1 style={{ textAlign: 'center' }}>{value === 'unknown' ? '' : 'ini kartu'}<span style={{ textTransform: 'uppercase' }}>{value === 'unknown' ? 'Tidak tedefinisi' : value}</span></h1>
       {/* <Cards
         number={state}
       /> */}
